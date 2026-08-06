@@ -1,0 +1,18 @@
+document_types:
+  offer_letter:
+    name: "Offer Letter"
+    prefix: NAV
+    output_folder: "Offer Letters"
+    email_template: "Offer Letter"
+
+  appointment_letter:
+    name: "Appointment Letter"
+    prefix: APT
+    output_folder: "Appointment Letters"
+    email_template: "Appointment Letter"
+
+  joining_letter:
+    name: "Joining Letter"
+    prefix: JNL
+    output_folder: "Joining Letters"
+    email_template: "Joining Letter"
