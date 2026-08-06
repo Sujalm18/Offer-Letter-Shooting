@@ -17,10 +17,11 @@ class PdfService:
             return False
 
     def _check_libreoffice_installed(self) -> bool:
-        # Check standard installation paths for LibreOffice on Windows
+        # Check standard installation paths for LibreOffice on Windows and Linux
         paths = [
             r"C:\Program Files\LibreOffice\program\soffice.exe",
-            r"C:\Program Files (x86)\LibreOffice\program\soffice.exe"
+            r"C:\Program Files (x86)\LibreOffice\program\soffice.exe",
+            "/usr/bin/soffice"
         ]
         for path in paths:
             if os.path.exists(path):
