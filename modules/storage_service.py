@@ -23,6 +23,8 @@ class StorageServiceInterface:
 class SQLiteStorageService(StorageServiceInterface):
     def __init__(self, db_path: str = DB_PATH):
         self.db_path = db_path
+        import os
+        os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
         self.initialize_db()
 
     def get_connection(self):
